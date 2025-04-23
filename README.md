@@ -9,7 +9,7 @@ Deep Learning による最適オークション — 非公式実装
 
 # 機能
 
-RegretNet 実装
+**RegretNet** 実装
 
 論文で提案されたニューラルネットワーク・アーキテクチャを PyTorch で再構築。Additive / Unit‑Demand / Combinatorial 3 種のバリュエーションをサポート。
 
