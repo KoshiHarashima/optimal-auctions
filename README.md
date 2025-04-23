@@ -1,11 +1,10 @@
 # optimal-auctions
-```text
+
 Deep Learning による最適オークション — 非公式実装
-論文: Optimal Auctions through Deep Learning (ICML 2019) — Paul Dütting, Zhe Feng, Harikrishna Narasimham, David C. Parkes, Sai S. Ravindranath
-リポジトリ状態: アルファ版（研究用途向け／本番運用は想定していません）
+**論文**: Optimal Auctions through Deep Learning (ICML 2019) — Paul Dütting, Zhe Feng, Harikrishna Narasimham, David C. Parkes, Sai S. Ravindranath
+**リポジトリ状態**: アルファ版（研究用途向け／本番運用は想定していません）
 🙏 論文著者への感謝
 本リポジトリは上記論文のアイデアを参考に 一から実装 したものです。素晴らしい研究成果を公開してくださった著者の皆様に深く感謝いたします。
-```
 
 # 機能
 
