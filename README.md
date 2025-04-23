@@ -75,10 +75,10 @@ $ python -m venv .venv && source .venv/bin/activate
 $ pip install -r requirements.txt
 ```
 
-## 使い方
+# 使い方
 
-トレーニング
-
+## トレーニング
+```text
 python scripts/train.py \
     --config configs/additive2x2.yaml \
     --gpus 1
@@ -88,15 +88,16 @@ python scripts/train.py \
 --config: データ分布・ネットワーク規模・学習率などを記述した YAML
 
 --gpus: 使用 GPU 数（CPU の場合は 0）
+```
 
-評価 & 可視化
+## 評価 & 可視化
 ```text
 python scripts/eval.py --checkpoint path/to/ckpt.ckpt
-```
 
 Jupyter Notebook
 
 実験結果の再現やグラフ描画は notebooks/ 内の NB を起動して行えます。
+```
 
 ## モデル概要
 ```text
@@ -106,9 +107,7 @@ RegretNet は 収益最大化 と dominant‑strategy IC を同時に考慮す�
 
 出力: 各入札者への割当確率行列 g(b) と支払い p(b)
 
-学習目的:
-
-期待収益を最大化 (負の収益を最小化)
+学習目的: 期待収益を最大化 (負の収益を最小化)
 
 制約: 期待 ex‑post regret = 0 (DSIC 達成)
 
@@ -118,7 +117,6 @@ RegretNet は 収益最大化 と dominant‑strategy IC を同時に考慮す�
 ```
 
 ## 実験の再現
-
 ```text
 論文 Table 1–5 の設定を configs/ に用意しています。
 for cfg in configs/icml19/*.yaml; do
