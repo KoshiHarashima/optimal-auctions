@@ -7,8 +7,6 @@ Deep Learning による最適オークション — 非公式実装
 本リポジトリは上記論文のアイデアを参考に 一から実装 したものです。素晴らしい研究成果を公開してくださった著者の皆様に深く感謝いたします。
 ```
 
-この実装の特徴
-
 # 機能
 
 RegretNet 実装
@@ -27,7 +25,7 @@ GPU & マルチラン対応
 
 PyTorch Lightning / Hydra を利用し、複数 GPU やハイパーパラメータ掃きも簡単。
 
-## リポジトリ構成
+# リポジトリ構成
 ```text
 optimal-auctions/
 ├── README.md              # ← 今ご覧のファイル
@@ -51,7 +49,7 @@ optimal-auctions/
 └── tests/                 # 単体テスト (pytest)
 ```
 
-セットアップ手順
+# セットアップ手順
 
 Poetry を使う場合（推奨）
 
@@ -121,12 +119,11 @@ RegretNet は 収益最大化 と dominant‑strategy IC を同時に考慮す�
 
 ## 実験の再現
 
+```text
 論文 Table 1–5 の設定を configs/ に用意しています。
-
 for cfg in configs/icml19/*.yaml; do
   python scripts/train.py --config $cfg --gpus 1
 done
-
 完了後、results/ に CSV ログとチェックポイントが保存されます。
 ```
 
